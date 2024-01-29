@@ -10,3 +10,17 @@ function scrollHeader() {
 }
 
 window.addEventListener('scroll', scrollHeader)
+
+// SWIPER POPULAR
+var swiperPopular = new Swiper(".popular__container", {
+  navigation: {
+    spaceBetween: 32,
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    loop: true,
+
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
