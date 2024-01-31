@@ -24,3 +24,15 @@ var swiperPopular = new Swiper(".popular__container", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+// VALUE ACCORDION
+const accordionItems = document.querySelectorAll('.value__accordion-item');
+
+accordionItems.forEach(item => {
+  const itemHeader = item.querySelector('header');
+  itemHeader.addEventListener('click', event => {
+    const itemContent = item.querySelector('.value__accordion-content');
+
+    itemContent.style.height = (itemContent.style.height === '0px' || itemContent.style.height === '') ? 'auto' : '0';
+  })
+})
