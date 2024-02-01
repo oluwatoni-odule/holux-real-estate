@@ -491,7 +491,6 @@ button {
   display: flex;
   align-items: center;
   cursor: pointer;
-  margin-bottom: 1rem;
 }
 
 .value__accordion-icon {
@@ -524,6 +523,7 @@ button {
 }
 
 .value__accordion-description {
+  padding: 1rem 0 0 0;
   font-size: var(--smaller-font-size);
 }
 
@@ -534,10 +534,22 @@ button {
 }
 
 /*Rotate icon and add shadows*/
+.accordion-open {
+  box-shadow: 0 12px 32px hsla(228, 66%, 45%, .1);
+}
 
+.accordion-open .value__accordion-arrow i {
+  transform: rotate(180deg);
+}
 
 /*=============== CONTACT ===============*/
+.contact__images {
+  position: relative;
+}
 
+.contact__orbe {
+  width: ;
+}
 
 /*=============== SUBSCRIBE ===============*/
 
